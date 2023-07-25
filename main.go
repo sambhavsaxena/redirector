@@ -75,15 +75,15 @@ func (lb *LoadBalancer) serveProxy(rw http.ResponseWriter, req *http.Request) {
 
 func main() {
 	servers := []Server{
+		newSimpleServer("https://snapcraft.io"),
+		newSimpleServer("https://github.com/sambhavsaxena"),
 		newSimpleServer("http://localhost:3001"),
-		newSimpleServer("http://localhost:3002"),
-		newSimpleServer("http://localhost:3003"),
 	}
 	lb := NewLoadBalancer("3000", servers)
 	handleRedirect := func(rw http.ResponseWriter, req *http.Request) {
 		lb.serveProxy(rw, req)
 	}
 	http.HandleFunc("/", handleRedirect)
-	fmt.Printf("serving requests at 'localhost:%s'\n", lb.port)
+	fmt.Printf("distributing requests fired at 'localhost:%s'\n", lb.port)
 	http.ListenAndServe(":"+lb.port, nil)
 }
