@@ -3,7 +3,7 @@
 
 <div align="center">
 
-https://github.com/sambhavsaxena/redirector/assets/76242518/785873a0-9e4d-4e47-9f94-0dc247d23d6e
+https://github.com/sambhavsaxena/redirector/assets/76242518/33d3d611-b35e-4dc0-b719-afadcd09c5e0
 
 </div>
 
