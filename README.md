@@ -1,5 +1,5 @@
 # redirector
-🎲 A custom load balancer program written in Golang that works on Round Robin algorithm to serve requests to prevent network congestion and redirection.
+🎲 A simple load balancer written in Golang that works on [Round Robin scheduling](https://en.wikipedia.org/wiki/Round-robin_scheduling) algorithm and serve requests evenly through specified IP-addresses, prevents network congestion thus minimizing overall down-time.
 
 <div align="center">
 
