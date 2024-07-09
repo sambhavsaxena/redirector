@@ -36,6 +36,8 @@ func newSimpleServer(addr string) *simpleServer {
 	}
 }
 
+//IM LEARNING HOW TO GIT NIGGA
+
 type LoadBalancer struct {
 	port            string
 	roundRobinCount int
