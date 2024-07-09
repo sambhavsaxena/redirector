@@ -36,7 +36,8 @@ func newSimpleServer(addr string) *simpleServer {
 	}
 }
 
-//IM LEARNING HOW TO GIT NIGGA
+//I'M LEARNING HOW TO GIT NIGGA
+//IT'S SHAMEFUL THAT I FEEL I DON'T KNOW ANY OF IT
 
 type LoadBalancer struct {
 	port            string
