@@ -57,10 +57,6 @@ func handleErr(err error) {
 	}
 }
 
-func main() {
-	return LoadBalancer.get_servers();
-}
-
 func (lb *LoadBalancer) getNextAvailableServer() Server {
 	server := lb.servers[lb.roundRobinCount%len(lb.servers)]
 	for !server.IsAlive() {
